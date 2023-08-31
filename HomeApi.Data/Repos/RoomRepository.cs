@@ -23,7 +23,7 @@ namespace HomeApi.Data.Repos
         public async Task<Room> GetRoomByName(string name)
         {
             return await _context.Rooms.Where(r => r.Name == name).FirstOrDefaultAsync();
-        }
+        } 
 
         /// <summary>
         /// Добавить новую комнату
